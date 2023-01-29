@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- 로그인창 -->
+      <div id="welcome">
+        <form id="login-form" class="hidden">
+          <input
+            required
+            type="text"
+            placeholder="What is your name?"
+            maxlength="15"
+          />
+          <input type="submit" value="Log In" />
+        </form>
+        <div id="greeting" class="hidden"></div>
+      </div>
+
+      <!-- 시계 -->
+      <h2 id="clock">00:00:00</h2>
+
+      <!-- 명언집 -->
+      <div id="quote">
+        <span id="quote__author"></span>
+        <span id="quote__quote"></span>
+      </div>
+    </main>
+
+    <div id="sidebar">
+      <div id="weather-header">
+        <span>ㆍ Weather</span>
+      </div>
+      <div id="weather">
+        <span id="weather__weather"></span>
+        <span id="weather__temperature"></span>
+      </div>
+
+      <!-- 투두 -->
+      <div id="todo-header">
+        <span> ㆍ To Do </span>
+      </div>
+      <div id="todo-sidebar">
+        <form id="todo-form">
+          <input
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+            maxlength="21"
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <!-- js 연결 -->
+    <script src="js/quotes.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/eebda4e76a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
